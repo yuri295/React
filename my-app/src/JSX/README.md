@@ -2,26 +2,26 @@
 
         - JavaScript + XML/HTML
         - JSX 코드
-            ~~~ const element = <h1>Hello,world!</h1> ~~~
+        ```const element = <h1>Hello,world!</h1>```
 
 ## JSX 역할
 
         - JSX를 사용한 코드
-            - ~~~javascript
+        ```javascript
             const element = (
                     <h1 className="greeting">
                         Hello,world!
                     </h1>
             )
-            ~~~
+        ```
         - JSX를 사용하지 않은 코드
-            -~~~javascript
+        ```javascript
             const element = React.createElement( //객체 생성
                 'h1',
                 { className: 'greeting'},
                 'Hello, world!'
             )
-            ~~~
+        ```
 
 ## JSX의 장점
 
