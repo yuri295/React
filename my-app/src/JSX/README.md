@@ -1,12 +1,14 @@
 ## JSX란?
 
-        - JavaScript + XML/HTML
-        - JSX 코드
+        * JavaScript + XML/HTML
+        * JSX 코드
+
         ```const element = <h1>Hello,world!</h1>```
 
 ## JSX 역할
 
-        - JSX를 사용한 코드
+        * JSX를 사용한 코드
+
         ```javascript
             const element = (
                     <h1 className="greeting">
