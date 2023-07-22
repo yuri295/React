@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import Library from './JSX/Library';
 import Clock from './Elements/Clock';
 import CommentList from './Components&Props/CommentList';
+import NotificationList from './State/NotificationList';
+import Accomodate from './Hooks/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <Accomodate />
   </React.StrictMode>
 );
 
