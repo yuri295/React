@@ -9,12 +9,16 @@ import Clock from './Elements/Clock';
 import CommentList from './Components&Props/CommentList';
 import NotificationList from './State/NotificationList';
 import Accomodate from './Hooks/Accommodate';
+import ConfirmButton from './HandlingEvents/ConfirmButton';
+import LandingPage from './ConditionalRendering/LandingPage';
+import AttendanceBook from './Lists&Keys/AttendanceBook';
+import SignUp from './Forms/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Accomodate />
+    <SignUp />
   </React.StrictMode>
 );
 

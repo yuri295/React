@@ -37,7 +37,7 @@
   ## useMemo()
 
   - Memoized value를 리턴하는 Hook
-  - 의존성 변수가 변하지 않는다면 기존에 저장된 함수 결과값을 그대로 반환
+  - 의존성 변수가 변했을 때만 새로운 결과값 반환
 
   ```
   const memoizedValue = useMemo(
@@ -48,3 +48,29 @@
      [의존성 변수1, 의존성 변수2]
   );
   ```
+
+  ## useCallback()
+
+  - useMemo() Hook과 유사하지만 값이 아닌 함수를 반환
+
+  ```
+  const memoizedCallback = useCallback(
+    () => {
+        doSomething(의존성 변수1, 의존성 변수2);
+    },
+    [의존성 변수1, 의존성 변수2]
+  );
+  ```
+
+  ## useRef()
+
+  - Reference를 사용하기 위한 Hook
+
+  ```
+  const refContainer = useRef(초깃값);
+  ```
+
+  ## Hook의 규칙
+
+  - Hook은 무조건 최상위 레벨에서만 호출해야 한다.
+  - 리액트 함수 컴포넌트에서만 Hook을 호출해야 한다.
