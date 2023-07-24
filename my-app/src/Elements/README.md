@@ -7,7 +7,7 @@
 
 - 자바스크립트 객체 형태로 존재
 
-```
+```JavaScript
 //createElement를 이용해서 만들어진 React Element 객체
 React.createElement(
     type,
@@ -17,7 +17,7 @@ React.createElement(
 
 ```
 
-````
+````JavaScript
 // JSX를 이용해서 만들어진 React Element 객체
 {
     type:Button,
@@ -25,7 +25,7 @@ React.createElement(
         color: 'green',
         children: 'Hello, element!'
     }
-}```
+}
 ````
 
 ## React Elements의 특징
@@ -35,7 +35,7 @@ React.createElement(
 
 ## Elements 렌더링하기
 
-```
+```JavaScript
 function tick() {
     const element = (
         <div>

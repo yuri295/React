@@ -19,7 +19,7 @@
 
 - 사용법
 
-```
+```JavaScript
 function App(props) {
     return (
         <Profile

@@ -11,7 +11,7 @@
 - children prop 사용
 - 하위 컴포넌트를 포함하는 형태로 합성
 
-```
+```JavaScript
 function FancyBorder(props) {
     return (
         <div> className={'FancyBorder FancyBorder-' + props.color}>
@@ -39,7 +39,7 @@ function WelcomeDialog(props) {
 
 - 범용적인 개념을 구별이 되게 구체화하는 것
 
-```
+```JavaScript
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
@@ -50,7 +50,7 @@ function Dialog(props) {
                 {props.message}
             </p>
         </FancyBorder>
-    )'
+    );
 }
 
 function WelcomeDialog(props) {

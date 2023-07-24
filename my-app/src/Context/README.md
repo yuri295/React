@@ -2,7 +2,7 @@
 
 - 여러 컴포넌트에서 계속해서 접근이 일어날 수 있는 데이터들이 있는 경우 사용
 
-```
+```JavaScript
 const ThemeContext = React.createContext('light');
 
 // 모든 하위 컴포넌트들은 컴포넌트 트리 하단에 얼마나 깊이 있는지에 관계없이 데이터를 읽을 수 있다.
@@ -19,20 +19,20 @@ function App(props) {
 
 - Context 생성
 
-```
+```JavaScript
 const Mycontext = React.createContext(기본값);
 
 ```
 
 ### Context.Provider
 
-```
+```JavaScript
 <MyContext.Provider value={*/ some value */}>
 ```
 
 - 주의: Provider 컴포넌트가 재렌더링될 때마다 모든 하위 consumer 컴포넌트가 재랜더링 됨.
 
-```
+```JavaScript
 //state를 사용하여 불필요한 재랜더링을 막음.
 function App(props) {
     const [value,setValue] = useState({ something: 'something'});
@@ -47,7 +47,7 @@ function App(props) {
 
 ### Context.Consumer
 
-```
+```JavaScript
 <MyContext.Consumer>
     {value => /*컨텍스트의 값에 따라서 컴포넌트들을 렌더링 */ }
 </MyContext.Consumer>
@@ -55,7 +55,7 @@ function App(props) {
 
 ### Context.displayName
 
-```
+```JavaScript
 const MyContext = React.createContext(/* some value */);
 MyContext.displayName = 'MyDisplayName';
 
@@ -69,12 +69,12 @@ MyContext.displayName = 'MyDisplayName';
 
 ## useContext() Hook
 
-````
+```JavaScript
 function MyComponent(props) {
     const value = useContext(MyContext);
 
     return (
         ...
     )
-}```
-````
+}
+```

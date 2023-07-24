@@ -2,7 +2,7 @@
 
 - 배열의 첫번째 값부터 연산을 수행한 뒤에 최종 결과를 배열로 만들어서 return
 
-```
+```JavaScript
 const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
     <li>{number}</li>

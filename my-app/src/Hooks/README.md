@@ -9,7 +9,7 @@
   - state를 사용하기 위한 Hook
   - 변수 각각에 대해 set함수가 따로 존재
 
-  ```
+  ```JavaScript
   const [변수명, set함수명] = useState(초기값);
   ```
 
@@ -17,11 +17,11 @@
 
   - Side effect를 수행하기 위한 Hook
 
-  ```
+  ```JavaScript
   useEffect(이펙트 함수, 의존성 배열);
   ```
 
-  ```
+  ```JavaScript
     useEffect(() => {
         // 컴포넌트가 마운트 된 이후,
         // 의존성 배열에 있는 변수들 중 하나라도 값이 변경되었을 때 실행
@@ -39,7 +39,7 @@
   - Memoized value를 리턴하는 Hook
   - 의존성 변수가 변했을 때만 새로운 결과값 반환
 
-  ```
+  ```JavaScript
   const memoizedValue = useMemo(
      () => {
          //연산량이 높은 작업을 수행하여 결과를 반환
@@ -53,7 +53,7 @@
 
   - useMemo() Hook과 유사하지만 값이 아닌 함수를 반환
 
-  ```
+  ```JavaScript
   const memoizedCallback = useCallback(
     () => {
         doSomething(의존성 변수1, 의존성 변수2);
@@ -66,7 +66,7 @@
 
   - Reference를 사용하기 위한 Hook
 
-  ```
+  ```JavaScript
   const refContainer = useRef(초깃값);
   ```
 

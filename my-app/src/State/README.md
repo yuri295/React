@@ -3,7 +3,7 @@
 - React Component의 변경 가능한 데이터
 - 렌더링이나 데이터 흐름에 사용되는 값만 state에 포함시켜야 함
 
-```
+```JavaScript
 class LikeButton extends React.Componenet {
     constructor(props) {
         super(props);
@@ -17,7 +17,7 @@ class LikeButton extends React.Componenet {
 
 - 직접 수정하면 안됨
 
-```
+```JavaScript
 // state를 직접 수정(잘못된 사용법)
 this.state = {
     name: 'Yuri'
