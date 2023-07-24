@@ -65,4 +65,3 @@ function Calculator(props) {
 }
 
 export default Calculator;
-웨 안뒈 스트레스@!@@!@!@

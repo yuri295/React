@@ -14,12 +14,13 @@ import LandingPage from './ConditionalRendering/LandingPage';
 import AttendanceBook from './Lists&Keys/AttendanceBook';
 import SignUp from './Forms/SignUp';
 import Calculator from './SharedState/Calculator';
-
+import ProfileCard from './Composition/ProfileCard';
+import DarkOrLight from './Context/DarkOrLight';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Calculator />
+    <DarkOrLight />
   </React.StrictMode>
 );
 
