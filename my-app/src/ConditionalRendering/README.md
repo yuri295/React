@@ -2,7 +2,7 @@
 
 - 조건에 따른 렌더링
 
-```
+```JavaScript
 function UserGreeting(props) {
     return <h1>다시 오셨군요!</h1>;
 }
@@ -29,7 +29,7 @@ function Greeting(props) {
 
   - && 연산자를 사용
 
-  ```
+  ```JavaScript
   function Mailbox(props) {
       const unreadMessages = props.unreadMessages;
 
@@ -50,7 +50,7 @@ function Greeting(props) {
 
   - ? 연산자를 사용
 
-  ```
+  ```JavaScript
   function UserStatus(props) {
       return (
           <div>

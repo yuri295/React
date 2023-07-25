@@ -67,7 +67,7 @@ MyContext.displayName = 'MyDisplayName';
 
 ```
 
-## useContext() Hook
+### useContext() Hook
 
 ```JavaScript
 function MyComponent(props) {
